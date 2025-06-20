@@ -129,3 +129,13 @@
 ;;
 ;; turn off the "really quit emacs?" prompt
 (setq confirm-kill-emacs nil)
+
+
+(cl-loop for file in '("/opt/homebrew/bin/fish" "/bin/bash")
+	 when (file-exists-p file)
+	 do (progn
+	      (setq shell-file-name file)
+	      (cl-return)))
+(setenv "SHELL" shell-file-name)
+
+(setq doom-theme 'doom-solarized-light)
