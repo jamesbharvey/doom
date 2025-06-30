@@ -83,7 +83,7 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 (setq make-backup-files nil) ; stop creating ~ files
-(setq doom-font (font-spec :size 14 :family "Courier"  ))
+(setq doom-font (font-spec :size 14 :family "Courier" :spacing 'M ))
 
 ;;
 ;; set the default frame geometry. not that this geometry is
