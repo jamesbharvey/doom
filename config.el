@@ -34,7 +34,8 @@
 ;; `load-theme' function. This is the default:
 ;;(setq doom-theme 'doom-one)
 (setq doom-theme 'doom-solarized-light)
-
+;;(setq doom-theme 'doom-solarized-dark)
+;;(setq doom-theme 'doom-zenburn)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
