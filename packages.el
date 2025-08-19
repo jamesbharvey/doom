@@ -49,8 +49,8 @@
 ;; (unpin! t)
 
 
-(package! float-narrow-indirect
-   :recipe (:host github :repo "yibie/float-narrow-indirect"))
+;; (package! float-narrow-indirect
+;;    :recipe (:host github :repo "yibie/float-narrow-indirect"))
 
 (package! copilot
   :recipe (:host github :repo "copilot-emacs/copilot.el" :files ("*.el")))

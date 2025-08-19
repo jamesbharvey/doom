@@ -92,18 +92,18 @@
 ;;
 ;; float-narrow-indirect settings
 ;;
-(global-set-key (kbd "C-c n f") 'fni-narrow-to-region-floating)
-(global-set-key (kbd "C-c n t") 'fni-toggle-focus)
-(global-set-key (kbd "C-c n c") 'fni-clear-aggregation)
-;; Size of floating windows (width . height) as ratio of parent frame
-(setq ni-floating-window-size '(0.3 . 0.5))
-;; Border color for floating frames
-(setq ni-floating-frame-border-color "gray50")
-;; Transparency for floating frames (active . inactive)
-(setq ni-floating-frame-transparency '(95 . 90))
-;; Buffer name prefix and separator
-(setq ni-buf-name-prefix "NI-")
-(setq ni-buf-name-separator "::")
+;; (global-set-key (kbd "C-c n f") 'fni-narrow-to-region-floating)
+;; (global-set-key (kbd "C-c n t") 'fni-toggle-focus)
+;; (global-set-key (kbd "C-c n c") 'fni-clear-aggregation)
+;; ;; Size of floating windows (width . height) as ratio of parent frame
+;; (setq ni-floating-window-size '(0.3 . 0.5))
+;; ;; Border color for floating frames
+;; (setq ni-floating-frame-border-color "gray50")
+;; ;; Transparency for floating frames (active . inactive)
+;; (setq ni-floating-frame-transparency '(95 . 90))
+;; ;; Buffer name prefix and separator
+;; (setq ni-buf-name-prefix "NI-")
+;; (setq ni-buf-name-separator "::")
 
 
 
@@ -131,3 +131,11 @@
 	      (setq shell-file-name file)
 	      (cl-return)))
 (setenv "SHELL" shell-file-name)
+
+;; (after! vterm
+;;   ;; Remove or modify popup rules for vterm buffers
+;;   ;; This example removes any existing popup rule for buffers starting with "vterm"
+;;   (set-popup-rule! "^vterm" :quit nil :select nil :size nil :vslot nil :side nil)
+;;   ;; Alternatively, you might target a specific vterm buffer name if one is used
+;;   ;; (set-popup-rule! "*doom:vterm-popup:main*" :quit nil :select nil :size nil :vslot nil :side nil)
+;;   )
